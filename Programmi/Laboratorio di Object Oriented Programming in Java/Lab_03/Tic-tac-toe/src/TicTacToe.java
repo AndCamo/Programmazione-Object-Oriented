@@ -32,7 +32,63 @@ public class TicTacToe {
     }
 
     public String getWinner() {
-        /* TODO */
+        int i = 0, j = 0;
+        boolean columnFlag, rowFlag, diagonalFlag;
+        String winner = " ";
+        String currentPlayer = " ";
+
+        //ROW AND COLUMN CHECK WINNER
+        for (i = 0; i < ROWS; i++)
+        {
+            rowFlag = true;
+            columnFlag = true;
+            for(j = 0; j < COLUMNS; j++)
+            {
+                if(!(board[i][j].equals(board[i][0])) || (board[i][0].equals(" ")))
+                    rowFlag = false;
+                if(!(board[j][i].equals(board[0][i])) || (board[0][i].equals(" ")))
+                    columnFlag = false;
+            }
+            if(rowFlag) {
+                currentPlayer = board[i][0];
+                winner = currentPlayer;
+                return winner;
+            }
+            else if(columnFlag){
+                currentPlayer = board[0][i];
+                winner = currentPlayer;
+                return winner;
+            }
+        }
+        //CHECK FIRST DIAGONAL
+        diagonalFlag = true;
+        for (i = 0; i < ROWS; i++)
+        {
+            if(!(board[i][i].equals(board[0][0])) || (board[0][0].equals(" ")))
+                diagonalFlag = false;
+        }
+        if(diagonalFlag) {
+            currentPlayer = board[0][0];
+            winner = currentPlayer;
+            return winner;
+        }
+
+        //CHECK SECOND DIAGONAL
+        diagonalFlag = true;
+        j = COLUMNS - 1;
+        for (i = 0; i < ROWS; i++)
+        {
+            if(!(board[i][j].equals(board[0][COLUMNS - 1])) || (board[0][COLUMNS - 1].equals(" ")))
+                diagonalFlag = false;
+            j--;
+        }
+        if(diagonalFlag) {
+            currentPlayer = board[0][COLUMNS - 1];
+            winner = currentPlayer;
+            return winner;
+        }
+
+        return "Nessun vincitore";
     }
 
     public static void main(String[] args) {
@@ -43,9 +99,9 @@ public class TicTacToe {
         System.out.println(game);
 
         do {
-
             if (game.getWinner().equals(player1) || game.getWinner().equals(player2)) {
                 System.out.println("Partita finita");
+                System.out.println("Vince: " + game.getWinner());
                 System.exit(0);
             }
 
@@ -63,7 +119,16 @@ public class TicTacToe {
             if (row >= ROWS || column >= COLUMNS) {
                 System.out.println("Combinazione non valida");
             } else {
-                /* TODO */
+                game.set(row, column, player);
+
+                System.out.println(game);
+
+                System.out.println("Vince: " + game.getWinner());
+
+                if (player.equals(player1))
+                    player = player2;
+                else
+                    player = player1;
             }
 
         } while (row < ROWS && column < COLUMNS);

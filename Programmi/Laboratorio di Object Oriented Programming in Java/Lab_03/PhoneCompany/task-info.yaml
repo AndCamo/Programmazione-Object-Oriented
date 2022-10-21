@@ -11,15 +11,15 @@ files:
 - name: src/PhoneCompany.java
   visible: true
   placeholders:
-  - offset: 300
-    length: 10
+  - offset: 296
+    length: 1472
     placeholder_text: /* TODO */
     initial_state:
       length: 10
       offset: 300
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: nkIBB1EsuEaZCu++PYS71Gk1fbMxOJ8z2cGjTSEitBAg7B89abouTzYHVyI2fqxHHiLfTkr5uOZjxlAyzEbloZjgiOlNuX6PLwHAmqS2O5dmaRPki77OLpURqrhY10SJt0bytnlpnCM6+2CYThfaVJOcHN2kEm6YzUulSLlytEHR18k9Q55TqJfeXiKKr3beFaLuVb6OE62vS1shkySrDRoyJydW3Qf3JpwA9ZRzTLylAgJhq3dM/SiYEZxWj6wCuYUQOJWbQeWOdUq1Ykylv0eyNyFHoDs1SYFF0MyDMoEemzYU9Gt2AjgwF+e/aWoc45phsA8nCGmISNRiTEpMMtYlUAU3aRKxv/YD55/O8NwoQoKTmfXQzbDE1mNjWwH66o4D4GHPmhEnN329ucM3zBU4DGY35Mf7UFJ7Or4DepJZcoB4/tVHTRLR2st9drz9J33qrRUbnS2Q8IhD2wYsxZtXPT+/TdYmwujMJB0QEYNFWNvJUurRt7qFiKr0EsjClSx03RaL2EiQIRNs5EIHKeshvqO8KMSvQHJuBMdKZHS+9p3ypaN/X951QdA/Db00Hf/JPXAqUIKORZgCSyy/xIaplxMZI3RLXxO+PR6CS046vj2NGU2GeN5G8xfyA6G86+r8e7AJiBw58JmtnVhqwZBxu6RwPF3/MQ493Z/2+NSDViY8MCjhqBNC8wkERTMg24YmCHleRV3bYPOT1knIarchwk48TiYjReH2sZH1AGBpxJE5H8UKrQlH1j5y4ZnlGJT5EmMr25pJnsxt3HRez0tvKpkp+60KFvPfaBcnWFQ3khrJon3MI5e9ea3gyEFAo4k34MsMviMlgnU45JzJrBKnJ+pK8gEqUrjvbfwJy7u8AYEEbht+SGj+AY6Vb0/V3DoEUKvN5/u2PHSWQIXuqIV5SFzmFDERXjkySxJRrOPpRLpmkD9Ae+D4fVjZobbsfgI3wQ9zinxiBB7HtugERuomwDq+kabVJnLit8KlwE3R244OuILk38ZPZ75/itGtB1LOhY4UxpiWDEuIn3xukkOl5RGbTyGWftVQVsrXo9sA/dhIoSBpStUeIto3haWJSQH2zkmPHb32D94JPa057pvMLKwiIcWpMtYswTvn/ccX9mkQjW/wzCdzv274lo5DUVo7tMi7f8ImDhDmNXoAIWcmUMyDnjfFwLEa2eBJj4ZbxV9URaEqJ2fCBJrdwdbPttiYLHk2k4OFItowJpjosLxIGxXkFTgfsQhRMUp1xsgXCrjje1xgK6BQYCUzRL/vOQryaeny+/8XIK0cg5kwIxvXUXlvkt5aJwTVTLEI3lo818TtcQLp3xSPxssuBXBoKe2vsoxRtUF/LP8M7AdfwvUnQYyu23fV5VScCzXeGxt+xusZT0DmkKbeK4L5QXhHv7WZtun+SPlbylzxmtVcwUYyAXcf9LlJtwZEWPb458ycd3E678xLI19AW6K8V6/bg274IIi4hEZN4MpaEHvktF1GjH4w+nuR6V3HrhDdfy65AqlEsSTqf9CzisrCfGaQkx9m0Y1xTwv3elgphusUuOGXAG2gLZM7kKV6pOwqC1OiXCS1ge6swTrYYqaikEtrjbTkYspXOseJJCHW5YcPWTG/bUrV8hy2n3Ybegv5bg7JQzkbVxNXiHX1P6kWwdw/iVu0lRRdAqhxbq2cNoYFVEGjHsWwrLK9S43AP+PoKQYH5KdpMRucQL4B4/vxd/9a7/8A/y7S4w3eLSF2N72PyQxh53JCJdlcpG7c+BHzSzT5x/nihzkPyDUqlUfkr9EC
   encrypted_text: Xtva9nQXHbxXlKEkYazs+MDYVb8JL+UZEVbicgx3NZTp8UPmuaP3JkPilTCqM4btenmMMqaBw7IOm5ny+lhiY0Xs2c+fTwYnhDOBJHdLcpvA7+dleSKHA/FIeDcMUoosEGWD4rOfVD0apPRQH4d9+olbIGTGdiGNrFSFWbfPGRuXCekG2gHkqQMtt1coyBsUQox+1PpCRxc5gOYWKW9V7gtsNqrV95eEJQB1BjX3iNNk0CCH0ms4n5zNOShQffYNhTva1ukCOS2nqwsfpQ6hTBOttGg3+ThZ4l89wPMgHSK3ZiDY+NHiAL1IlWDjscLDwv9fQ1zVabfYqUfjCLaK3CAdNfX5Lx1VT5f8v28F1YJVs9o0m21zisvb5BGHQORTl/FmdvTX2WQk0/TQ1PoSR34luAdLFfXeA7da/yYuksA=
   learner_created: false
@@ -27,5 +27,8 @@ files:
   visible: true
   encrypted_text: vGSTr6/iC8+/YJ6/iT77orRqJ+H7E3pRSBdnCVshyLCdr9h2W4FoXt8F2TPivO3GVHp1rXCXsMsTPRtUFRiNbg==
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 20 Oct 2022 21:53:24 UTC
 record: -1

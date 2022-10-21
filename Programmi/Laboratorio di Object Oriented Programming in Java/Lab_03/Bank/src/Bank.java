@@ -1,3 +1,4 @@
+import java.lang.invoke.LambdaMetafactory;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,7 +11,7 @@ public class Bank {
     }
 
     public void addAccount(double initialBalance, String customerName) {
-        /* TODO */
+        accounts.add(new BankAccount(initialBalance, customerName));
     }
 
     public BankAccount find(int accountNumber) {
@@ -22,18 +23,24 @@ public class Bank {
     }
 
     public void deposit(int accountNumber, double amount) {
-        /* TODO */
+        BankAccount currentAccount = find(accountNumber);
+        currentAccount.deposit(amount);
     }
 
     public void withdraw(int accountNumber, double amount) {
-        /* TODO */
+        BankAccount currentAccount = this.find(accountNumber);
+        currentAccount.withdraw(amount);
     }
 
     public double getBalance(int accountNumber) {
-        /* TODO */
+        BankAccount currentAccount = this.find(accountNumber);
+        return currentAccount.getBalance();
     }
 
     public void transfer(int fromAccountNumber, int toAccountNumber, double amount) {
-        /* TODO */
+        BankAccount senderAccount = find(fromAccountNumber);
+        BankAccount reciverAccount = find(toAccountNumber);
+        senderAccount.withdraw(amount);
+        reciverAccount.deposit(amount);
     }
 }

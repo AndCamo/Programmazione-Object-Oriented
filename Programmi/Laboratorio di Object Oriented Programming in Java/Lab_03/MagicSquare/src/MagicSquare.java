@@ -32,14 +32,73 @@ public class MagicSquare {
     }
 
     public void add(int x) {
-        /* TODO */
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++) {
+                if (square[i][j] == 0) {
+                    square[i][j] = x;
+                    return;
+                }
+            }
+        }
     }
 
     public boolean isMagic() {
         int magicNumber = 0;
+        int tmpSum = 0;
         boolean isMagic = true;
+        int i, j;
+        for (i = 0; i < n; i++)
+            magicNumber = magicNumber + square[0][i]; //Calcola il numero da confrontare
 
-        /* TODO */
+        //Controlla righe
+        for( i = 0; i < n; i++) {
+            tmpSum = 0;
+            for( j = 0; j < n; j++)
+                tmpSum += square[i][j];
+
+            if (tmpSum != magicNumber) {
+                isMagic = false;
+                break;
+            }
+        }
+        //Controlla colonne
+        if(isMagic) {
+            for (j = 0; j < n; j++) {
+                tmpSum = 0;
+                for (i = 0; i < n; i++)
+                    tmpSum += square[i][j];
+
+                if (tmpSum != magicNumber) {
+                    isMagic = false;
+                    break;
+                }
+            }
+        }
+
+        //Controlla diagonale principale
+        if(isMagic) {
+            tmpSum = 0;
+            for (i = 0; i < n; i++)
+                tmpSum += square[i][i];
+
+            if (tmpSum != magicNumber)
+                isMagic = false;
+        }
+
+        //Controlla diagonale secondaria
+        if(isMagic) {
+            j = 0;
+            tmpSum = 0;
+            for (i = n - 1; i >= 0; i--) {
+                tmpSum += square[i][j];
+                j++;
+            }
+
+            if (tmpSum != magicNumber)
+                isMagic = false;
+        }
+
 
         return isMagic;
     }
